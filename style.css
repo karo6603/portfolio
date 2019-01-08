@@ -202,7 +202,7 @@ i {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5vh;
+    margin-bottom: 9vh;
 }
 
 #icons i {
@@ -274,36 +274,27 @@ i {
     margin-top: 0;
 }
 
-#picture {
-    background-image: url(SVG/screenshot-karolinekrogsboell.dk-2019.01.08-00-31-16.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100vh;
+.picture {
+    width: 50%;
     height: 30vw;
 }
 
 #artdeco {
     background-image: url(SVG/screenshot-karolinekrogsboell.dk-2019.01.08-00-31-16.png);
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
-    width: 100vh;
-    height: 30vw;
 }
 
 #pilot {
     background-image: url(SVG/Plant%20Jammer.jpg);
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
-    width: 100vh;
-    height: 32vw;
 }
 
 #redesign {
     background-image: url(SVG/screenshot-www.aeresport.dk-2019.01.08-01-34-361.png);
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
-    width: 100vh;
-    height: 30vw;
 }
 
 #game {
@@ -311,8 +302,6 @@ i {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100vh;
-    height: 30vw;
 }
 
 #private {
@@ -320,8 +309,6 @@ i {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100vh;
-    height: 30vw;
 }
 
 #kea {
@@ -329,8 +316,6 @@ i {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100vh;
-    height: 30vw;
 }
 
 #studybuddy {
@@ -338,13 +323,11 @@ i {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100vh;
-    height: 30vw;
 }
 
 #info {
     width: 50%;
-    height: 30vw;
+    height: 30vh;
     margin-right: 1vh;
     display: flex;
     flex-direction: column;
@@ -358,21 +341,42 @@ i {
 }
 
 #link {
-    width: 20vh;
-    height: 5vh;
+    width: 150px;
+    height: 50px;
     background-color: rgba(105, 105, 105, 0.34);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1vw;
+    margin-top: 10px;
 }
 
 #documentation {
-    width: 20vh;
-    height: 5vh;
+    width: 150px;
+    height: 50px;
     background-color: rgba(13, 13, 13, 0.34);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1vw;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    #toprow {
+        flex-direction: column-reverse;
+    }
+
+    .picture {
+        width: 100%;
+        height: 40vh;
+    }
+
+    #info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1vh;
+        margin-right: 0;
+    }
+
 }
