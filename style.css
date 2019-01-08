@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -58,8 +62,7 @@ a {
 
 #background1 {
     margin-top: 0vh;
-    background-image: url(SVG/4k-wallpaper-close-up-dew-807598.jpg);
-    filter: grayscale(50%);
+    background-image: url(SVG/1.jpg);
     background-position: right;
     background-size: cover;
 
@@ -91,7 +94,7 @@ a {
 
 #start p {
     font-family: 'Raleway', sans-serif;
-    margin-top: 6vh;
+    margin-top: 7vh;
     color: white;
 }
 
@@ -252,16 +255,13 @@ i {
     margin-right: auto;
 }
 
-#gallery {
-    margin-top: 10vh;
-}
-
 #toprow {
     display: flex;
     flex-direction: row;
     text-align: left;
     display: flex;
     justify-content: space-between;
+    margin-top: 100px;
 }
 
 #toprow h1 {
@@ -336,8 +336,11 @@ i {
 
 #description {
     margin-top: 5vh;
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
     text-align: justify;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #link {
@@ -379,4 +382,51 @@ i {
         margin-right: 0;
     }
 
+}
+
+/* CV */
+
+#cv {
+    text-align: center;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+#portrait {
+    background-image: url(SVG/migmigmig.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 35vw;
+    margin-right: 1vh;
+}
+
+#me {
+    width: 50%;
+    text-align: justify;
+}
+
+#me p {
+    margin-top: 0;
+}
+
+#me h2 {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+#cvrow {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+}
+
+ul {
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    line-height: 1.7;
+    padding: 0;
 }
