@@ -136,6 +136,22 @@ i {
     margin: auto auto auto 5vh;
 }
 
+#nav {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#nav h2 {
+    margin: auto auto auto 5vh;
+}
+
 .sticky {
     position: fixed;
     top: 0;
@@ -167,7 +183,7 @@ i {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 9vh;
+    margin-bottom: 230px;
 }
 
 #icons i {
@@ -216,7 +232,7 @@ mark {
     display: flex;
     flex-direction: column;
     text-align: center;
-    max-width: 80%;
+    max-width: 1100px;
     margin-top: 8vh;
     margin-left: auto;
     margin-right: auto;
@@ -242,26 +258,28 @@ mark {
 }
 
 .picture {
-    width: 50%;
-    height: 30vw;
+    width: 100%;
 }
 
 #artdeco {
     background-image: url(SVG/screenshot-karolinekrogsboell.dk-2019.01.08-00-31-16.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: right;
 }
 
 #pilot {
     background-image: url(SVG/Plant%20Jammer.jpg);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: right;
 }
 
 #redesign {
     background-image: url(SVG/screenshot-www.aeresport.dk-2019.01.08-01-34-361.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: right;
 }
 
 #game {
@@ -269,6 +287,7 @@ mark {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    background-position: right;
 }
 
 #private {
@@ -276,6 +295,7 @@ mark {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    background-position: right;
 }
 
 #kea {
@@ -283,6 +303,7 @@ mark {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    background-position: right;
 }
 
 #studybuddy {
@@ -290,6 +311,7 @@ mark {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    background-position: right;
 }
 
 .info {
@@ -302,12 +324,13 @@ mark {
 }
 
 .description {
-    margin-top: 5vh;
+    margin-top: 30px;
     margin-bottom: 10vh;
     text-align: justify;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.5;
 }
 
 .link {
@@ -315,7 +338,7 @@ mark {
     height: 50px;
     background-color: rgba(105, 105, 105, 0.34);
     padding-left: 5px;
-    padding-top: 5px;
+    padding-top: 15px;
     margin-top: 10px;
 }
 
@@ -324,7 +347,7 @@ mark {
     height: 50px;
     background-color: rgba(13, 13, 13, 0.34);
     padding-left: 5px;
-    padding-top: 5px;
+    padding-top: 15px;
     margin-top: 10px;
 }
 
@@ -333,22 +356,46 @@ mark {
 }
 
 @media only screen and (max-width: 700px) {
+    #start i {
+        margin-top: 100px;
+    }
+
+    #about {
+        padding-top: 0;
+    }
+
+    #icons {
+        margin-bottom: 16px;
+    }
+
+    #icon1 {
+        margin-top: 0;
+    }
+
     .toprow {
         flex-direction: column-reverse;
     }
 
     .picture {
-        width: 100%;
+        width: 80%;
         height: 40vh;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .info {
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 1vh;
-        margin-right: 0;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .description {
+        width: 80%;
+
     }
 
 
@@ -362,7 +409,7 @@ mark {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 80px;
 }
 
 #portrait {
@@ -370,13 +417,14 @@ mark {
     background-size: 100%;
     background-repeat: no-repeat;
     width: 50%;
-    height: 35vw;
+    height: 37vw;
     margin-right: 1vh;
 }
 
 #me {
     width: 50%;
     text-align: justify;
+    line-height: 2;
 }
 
 #me p {
@@ -391,7 +439,7 @@ mark {
 #cvrow {
     display: flex;
     flex-direction: row;
-    margin-top: 5vh;
+    margin-top: 4vh;
 }
 
 ul {
